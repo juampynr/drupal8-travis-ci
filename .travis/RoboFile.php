@@ -194,7 +194,7 @@ class RoboFile extends \Robo\Tasks
         $tasks = [];
         $tasks[] = $this->taskExecStack()
             ->dir('web')
-            ->exec('../vendor/bin/phpunit -c core --debug --coverage-clover ../build/logs/clover.xml --verbose');
+            ->exec('../vendor/bin/phpunit -c core --debug --coverage-clover ../build/logs/clover.xml');
         return $tasks;
     }
 
