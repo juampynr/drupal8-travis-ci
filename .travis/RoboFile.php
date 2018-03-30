@@ -85,6 +85,11 @@ class RoboFile extends \Robo\Tasks
     /**
      * Download's database to use within a Docker environment.
      *
+     * This task assumes that there is an environment variable that contains a URL
+     * that contains a database dump. Ideally, you should set up drush site
+     * aliases and then replace this task by a drush sql-sync one. See the
+     * README at lullabot/drupal8ci for further details.
+     *
      * @return \Robo\Task\Base\Exec[]
      *   An array of tasks.
      */
