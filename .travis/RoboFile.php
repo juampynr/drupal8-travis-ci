@@ -69,7 +69,7 @@ class RoboFile extends \Robo\Tasks
      * Command to run behat tests.
      *
      * @return \Robo\Result
-     *   The resul tof the collection of tasks.
+     *   The result tof the collection of tasks.
      */
     public function jobRunBehatTests()
     {
